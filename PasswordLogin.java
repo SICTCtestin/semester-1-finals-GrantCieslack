@@ -11,9 +11,9 @@ import java.io.File;
 import java.nio.file.Paths;
 
 public class PasswordLogin {
-
+  public static String realUser=BufferWriter.readLine();
     public static void main(){
-        if(Files.exists(Paths.get("data.txt"))){
+        if(Files.exists(Paths.get("data.txt")) && !(realUser==null)){
             //NEED TO FIX READSTRING DOING NEXT LINE
             login();
         }
@@ -26,6 +26,7 @@ public class PasswordLogin {
             String password=ui.nextLine();
             String loginCreds = username+","+password;
         BufferWriter.writeLine(loginCreds);
+        PasswordManager.firstTimeSetup(loginCreds);
         ui.close();
     }
         BufferWriter.saveAndClose();
@@ -38,7 +39,7 @@ public class PasswordLogin {
         //compare results
         //allow or deny(3 tries!)
         int tries = 3;
-        String realUser=BufferWriter.readLine();
+        
 
         while(tries!=0){
         System.out.println("Please enter username:");
@@ -48,7 +49,7 @@ public class PasswordLogin {
         String userPass = username+","+password;
         if(userPass.equals(realUser)){
             System.out.println("WELCOME!");
-            PasswordManager.accessAccount();
+            PasswordManager.accessAccount(realUser);
         }
         else{
         tries--;
@@ -59,5 +60,7 @@ public class PasswordLogin {
         }
         }
     }
+
+    
 
 }

@@ -2,6 +2,8 @@ import java.util.Scanner;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class BufferWriter {
 
@@ -82,6 +84,15 @@ public class BufferWriter {
             e.printStackTrace();
         }
         return null;
+    }
+    public static void deleteFile(){
+      try{
+      Files.delete(Paths.get("data.txt"));
+      }
+      catch(Exception e){
+            System.err.print("Cannot read the file");
+            e.printStackTrace();
+        }
     }
 }
 
