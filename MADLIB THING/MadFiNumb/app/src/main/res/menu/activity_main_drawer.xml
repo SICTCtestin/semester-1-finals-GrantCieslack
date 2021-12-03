@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/MadLib"
+            android:icon="@drawable/ic_baseline_bluetooth_24"
+            android:title="MadLib" />
+        <item
+            android:id="@+id/SciFiName"
+            android:icon="@drawable/ic_baseline_android_24"
+            android:title="SciFiName" />
+        <item
+            android:id="@+id/NumberGuessing"
+            android:icon="@drawable/ic_baseline_self_improvement_24"
+            android:title="NumbaGuess" />
+
+    </group>
+</menu>

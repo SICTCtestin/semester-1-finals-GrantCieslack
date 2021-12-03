@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/madlibTXT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generatorBTN" />
+
+    <EditText
+        android:id="@+id/editTextNoun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/noun1LBL"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextVerb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextVerb1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVerb1" />
+
+    <TextView
+        android:id="@+id/noun2LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:text="Noun"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNoun2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNoun2" />
+
+    <TextView
+        android:id="@+id/noun1LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="9dp"
+        android:text="Noun (Living Thing)"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNoun"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNoun"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/verbLBL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
+        android:text="Verb"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextVerb2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextVerb2" />
+
+    <TextView
+        android:id="@+id/adjectiveLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjective"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextAdj1"
+        app:layout_constraintEnd_toStartOf="@+id/verbLBL2"
+        app:layout_constraintStart_toStartOf="@+id/verbLBL2" />
+
+    <TextView
+        android:id="@+id/exclaimLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:text="@string/exclaimation"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextExclaim"
+        app:layout_constraintEnd_toStartOf="@+id/editTextExclaim" />
+
+    <TextView
+        android:id="@+id/adjectiveLBL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:text="@string/adjective"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextAdj2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextAdj2" />
+
+    <TextView
+        android:id="@+id/verbLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:text="@string/verb"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextVerb1"
+        app:layout_constraintEnd_toStartOf="@+id/editTextVerb1" />
+
+    <TextView
+        android:id="@+id/adj3LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/adjective_color"
+        app:layout_constraintEnd_toStartOf="@+id/editTextAdjColor"
+        app:layout_constraintTop_toTopOf="@+id/editTextAdjColor" />
+
+    <EditText
+        android:id="@+id/editTextAdj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdj1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdj1" />
+
+    <Button
+        android:id="@+id/generatorBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/generate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExclaim" />
+
+    <EditText
+        android:id="@+id/editTextExclaim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdjColor"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdjColor" />
+
+    <EditText
+        android:id="@+id/editTextAdjColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdj2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdj2" />
+
+    <EditText
+        android:id="@+id/editTextNoun2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextNoun"
+        app:layout_constraintTop_toBottomOf="@+id/noun1LBL" />
+
+    <EditText
+        android:id="@+id/editTextVerb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextNoun2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNoun2" />
+
+    <EditText
+        android:id="@+id/editTextAdj1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextVerb2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVerb2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
