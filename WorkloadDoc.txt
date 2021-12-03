@@ -1,0 +1,16 @@
+Grant
+	-Login
+	-Copied Generator from tutorial (linked on java file)
+	-Add function
+	-Delete function
+	-Change Function
+	-Data Conversion
+	-Viewing the passwords/accounts
+Tyler
+	-Accounts class constructor
+	-Password Checker
+	-Categories
+	-Some Data convsersion
+	-Fine tuning
+	-worked with me throughout most of what I did
+	-Moral Support

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class PasswordGen {
     public static void main(String[] args) {
     Scanner ui = new Scanner(System.in);
-    System.out.println("How long do you want your random password to be? ");
+    System.out.println("How long do you want your random password to be? (Must be at least 8 chracters long) ");
     int length = ui.nextInt();
     
         String randomPassword = "";
