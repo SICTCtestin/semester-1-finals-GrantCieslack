@@ -34,6 +34,7 @@ public class SciFiFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_scifi,container,false);
 
+        //set variables equal to elements
         firstNameTXT = rootView.findViewById(R.id.firstTXT);
         lastNameTXT = rootView.findViewById(R.id.lastTXT);
         cityTXT = rootView.findViewById(R.id.cityTXT);
@@ -54,6 +55,7 @@ public class SciFiFragment extends Fragment {
     }
     //generate SciFiName
     private void generate(){
+        //grabs inputs and makes them strings
         String first = String.valueOf(firstNameTXT.getText());
         String last = String.valueOf(lastNameTXT.getText());
         String city = String.valueOf(cityTXT.getText());
@@ -61,7 +63,7 @@ public class SciFiFragment extends Fragment {
         String brother = String.valueOf(broTXT.getText());
         String sister = String.valueOf(sisTXT.getText());
 
-
+        //randomly splices the strings to make the names
         int rF = (int) (Math.random()*firstNameTXT.length());
         int rL = (int) (Math.random()*lastNameTXT.length());
         int rC = (int) (Math.random()*cityTXT.length());

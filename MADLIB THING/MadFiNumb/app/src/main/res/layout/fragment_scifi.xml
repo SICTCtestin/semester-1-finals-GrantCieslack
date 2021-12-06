@@ -3,20 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f8c938">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="407dp"
+        android:layout_height="681dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:layout_width="match_parent"
@@ -36,13 +38,13 @@
 
             <TextView
                 android:id="@+id/firstLBL"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="First Name" />
+                android:text="First Name"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/firstTXT"
@@ -50,24 +52,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/lastLBL"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Last Name" />
+                android:text="Last Name"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/lastTXT"
@@ -75,24 +77,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/cityLBL"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="City" />
+                android:text="City"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/cityTXT"
@@ -100,24 +102,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/schoolLBL"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="School" />
+                android:text="School"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/schoolTXT"
@@ -125,24 +127,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/broLBL"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Brother" />
+                android:text="Brother"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/broTXT"
@@ -150,24 +152,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/sisLBL"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sister" />
+                android:text="Sister"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/sisTXT"
@@ -175,25 +177,30 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <Button
             android:id="@+id/generator"
+            style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/generate" />
+            android:background="#E33535"
+            android:text="@string/generate"
+            android:textSize="20sp"
+            app:icon="@android:drawable/ic_menu_add" />
 
         <TextView
             android:id="@+id/output"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
+            android:textColor="#673AB7"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

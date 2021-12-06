@@ -3,6 +3,7 @@ package com.example.madfinumb;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Switch;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -18,24 +19,31 @@ import com.example.madfinumb.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    //SOURCES
+    /*
+    https://stackoverflow.com/questions/2748830/how-to-change-background-color-in-android-app
+    https://stackoverflow.com/questions/21049747/how-can-i-generate-a-random-number-in-a-certain-range/21049922
+    https://stackoverflow.com/questions/2709253/converting-a-string-to-an-integer-on-android
+    Various Classmates
+    Notes from:
+        Madlib
+        SciFi Name Generator
+        NavDrawerTest
+    */
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
-//        binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each

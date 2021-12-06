@@ -38,6 +38,7 @@ public class MadLibFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_madlib, container, false);
 
+        //set variables to elements on xml
         nounTXT1 = rootView.findViewById(R.id.editTextNoun);
         nounTXT2 = rootView.findViewById(R.id.editTextNoun2);
         verbTXT1 = rootView.findViewById(R.id.editTextVerb1);
@@ -60,8 +61,10 @@ public class MadLibFragment extends Fragment {
 
 
     public void generate() {
+        //get random int to decide the madlib
         Random rng = new Random();
         int randomNumber = rng.nextInt(3);
+        //this is the different madlibs
         switch (randomNumber) {
             case 0:
                 output.setText("The " + adjTXT1.getText() + " " + nounTXT1.getText() + " will " + verbTXT1.getText() + " toward the " + adjTXT2.getText() + " " + nounTXT2.getText() + " and " + verbTXT2.getText() + " just before the " + colorTXT.getText() + " moon screams out '" + excTXT.getText() + "'.");
